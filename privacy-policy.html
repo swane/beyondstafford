@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MindText Mind Map</title>
+<style>
+  body {
+    margin: 0;
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  .updated { color: #8b949e; font-size: 13px; margin-bottom: 32px; }
+  h2 {
+    font-size: 18px;
+    margin-top: 32px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #30363d;
+  }
+  p, li { color: #c9d1d9; }
+  a { color: #58a6ff; }
+  code {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 13px;
+  }
+  ul { padding-left: 22px; }
+  .note {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #8b949e;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: 28 Aug 2026</div>
+
+  <p>MindText Mind Map ("the app") is a free, single-page tool for building
+  interactive radial mind maps, with an optional feature to build a map from
+  the contents of a Google Drive folder. This page explains what data the
+  app accesses and what happens to it.</p>
+
+  <h2>How the app runs</h2>
+  <p>The app is a single static web page. There is no server, no database,
+  and no backend of any kind — everything runs locally in your own browser.
+  Nothing you type or generate in the app is sent to us, because there is no
+  "us" on the receiving end; the app's author cannot see your mind maps,
+  your files, or your Google account data.</p>
+
+  <h2>Google Drive access</h2>
+  <p>If you use the "Crawl Google Drive" or "Save/Load Drive" features, the
+  app asks you to sign in with Google and requests the
+  <code>drive.file</code> permission scope. This is a narrow, Google-defined
+  scope that only grants access to:</p>
+  <ul>
+    <li>Files and folders you explicitly select through Google's own file
+    picker, and</li>
+    <li>Files the app itself creates (for example, the
+    <code>_mindmapfilenotes.txt</code> file it can save back into a folder
+    you picked).</li>
+  </ul>
+  <p>The app cannot see, list, or access any other file in your Google
+  Drive. All communication with Google Drive happens directly between your
+  browser and Google's servers, using an access token that Google issues to
+  your browser — this token, your files, and their contents are never sent
+  to any server operated by the app's author.</p>
+
+  <h2>What the app does with Drive data</h2>
+  <p>When you crawl a folder, the app reads that folder's file and
+  subfolder listing, file names, and (for generating thumbnails) file
+  content or preview images, all directly from Google's servers to your
+  browser. This is used only to draw the mind map and thumbnails on your
+  screen. If you add notes to files, those notes are saved back into a
+  plain-text file in the same Google Drive folder, under your own Google
+  account, using the same direct browser-to-Google connection.</p>
+
+  <h2>Other data the app may load</h2>
+  <p>If you add a plain weblink (not a Google Drive file) to a mind map,
+  the app may request a page title and preview image for that link from
+  <a href="https://microlink.io" target="_blank" rel="noopener">Microlink</a>,
+  a third-party service, by sending it the URL you entered. No other
+  personal data is sent as part of this request. The app also loads two
+  publicly available code libraries from their standard hosting
+  (Google's own libraries for Drive access, and
+  <a href="https://cdnjs.cloudflare.com" target="_blank" rel="noopener">cdnjs</a>
+  for PDF rendering) — these are code files, not services that receive your
+  data.</p>
+
+  <h2>Local storage and downloads</h2>
+  <p>Mind maps you create exist only in your browser's memory unless you
+  choose to save them — either as a local file download, or back into your
+  own Google Drive. The app does not use cookies, analytics, or any
+  tracking technology, and does not display ads.</p>
+
+  <h2>Revoking access</h2>
+  <p>You can remove the app's access to your Google account at any time via
+  <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account &rarr; Security &rarr; Third-party access</a>.
+  Doing so does not delete any files already saved in your Drive.</p>
+
+  <h2>Children's privacy</h2>
+  <p>This app is not directed at children and does not knowingly collect
+  data from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted at this
+  same address with a new "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to
+  <a href="mailto:robotmadsam@gmail.com">robotmadsam@gmail.com</a>.</p>
+</div>
+</body>
+</html>
